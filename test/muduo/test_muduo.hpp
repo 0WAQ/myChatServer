@@ -1,5 +1,8 @@
 #include <TcpServer.h>
 
+#ifndef INCLUDE_TEST_MUDUO_HPP
+#define INCLUDE_TEST_MUDUO_HPP
+
 /**
  * @brief 业务服务器: Echo
  */
@@ -77,3 +80,5 @@ private:
     mymuduo::EventLoop *loop_;
     mymuduo::TcpServer server_;
 };
+
+#endif // INCLUDE_TEST_MUDUO_HPP
